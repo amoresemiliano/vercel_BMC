@@ -3,115 +3,159 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vercel BMC - Análisis de Modelo de Negocio</title>
+    <title>Análisis Vercel | Business Model Canvas</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Vercel Business Model Canvas</h1>
-        <p>Toca cada área para ver el resumen y haz clic en <strong>+ Info</strong> para el análisis detallado.</p>
-    </header>
 
-    <main class="bmc-grid">
-        <!-- Bloque: Asociaciones Clave -->
-        <div class="card" onclick="flipCard(this)">
-            <div class="card-inner">
-                <div class="card-front color-partners"><h3>Asociaciones Clave</h3></div>
-                <div class="card-back">
-                    <p>AWS, GitHub, CMS (Contentful), Agencias Digitales.</p>
-                    <a href="detalles/partners.html" class="btn-info">+ Info</a>
+    <div class="main-container">
+        <!-- HEADER: HISTORIA Y PRESENTACIÓN -->
+        <header class="intro-section" id="vercel-history">
+            <div class="badge">Caso de Estudio</div>
+            <h1>VERCEL <span class="gradient-text"><br/>The Frontend Cloud</span></h1>
+            <p class="summary-text">
+                Fundada por Guillermo Rauch, Vercel transformó la web permitiendo a los desarrolladores desplegar aplicaciones con un clic. De los creadores de Next.js.
+            </p>
+            <a href="detalles/historia.html" class="btn-primary">Leer Historia Completa</a>
+        </header>
+
+        <!-- BMC GRID -->
+        <section class="bmc-grid">
+            <!-- Asociaciones Clave -->
+            <div class="card" onclick="flipCard(this)">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <div class="icon">🤝</div>
+                        <h3>Asociaciones Clave</h3>
+                    </div>
+                    <div class="card-back">
+                        <p>AWS, GitHub, GitLab y proveedores de Headless CMS como Contentful.</p>
+                        <a href="detalles/partners.html" class="btn-info">+ Info</a>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <!-- Bloque: Actividades Clave -->
-        <div class="card" onclick="flipCard(this)">
-            <div class="card-inner">
-                <div class="card-front color-activities"><h3>Actividades Clave</h3></div>
-                <div class="card-back">
-                    <p>Desarrollo de Next.js, Mantenimiento de Edge Network, v0 AI.</p>
-                    <a href="detalles/activities.html" class="btn-info">+ Info</a>
+            <!-- Actividades Clave -->
+            <div class="card" onclick="flipCard(this)">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <div class="icon">⚡</div>
+                        <h3>Actividades Clave</h3>
+                    </div>
+                    <div class="card-back">
+                        <p>Desarrollo de Next.js, optimización de Edge Network y v0 (IA).</p>
+                        <a href="detalles/actividades.html" class="btn-info">+ Info</a>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <!-- Bloque: Propuesta de Valor (Central) -->
-        <div class="card" onclick="flipCard(this)">
-            <div class="card-inner">
-                <div class="card-front color-value"><h3>Propuesta de Valor</h3></div>
-                <div class="card-back">
-                    <p>Despliegue instantáneo, performance extrema y DX (Developer Experience) superior.</p>
-                    <a href="detalles/value.html" class="btn-info">+ Info</a>
+            <!-- Propuesta de Valor -->
+            <div class="card highlight" onclick="flipCard(this)">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <div class="icon">💎</div>
+                        <h3>Propuesta de Valor</h3>
+                    </div>
+                    <div class="card-back">
+                        <p>Despliegue instantáneo, performance extrema y flujo DX inigualable.</p>
+                        <a href="detalles/propuesta.html" class="btn-info">+ Info</a>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <!-- Bloque: Relaciones con Clientes -->
-        <div class="card" onclick="flipCard(this)">
-            <div class="card-inner">
-                <div class="card-front color-relationships"><h3>Relaciones</h3></div>
-                <div class="card-back">
-                    <p>Self-service, Documentación premium, Soporte Enterprise.</p>
-                    <a href="detalles/relationships.html" class="btn-info">+ Info</a>
+            <!-- Relaciones con Clientes -->
+            <div class="card" onclick="flipCard(this)">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <div class="icon">❤️</div>
+                        <h3>Relaciones</h3>
+                    </div>
+                    <div class="card-back">
+                        <p>Comunidades Open Source, soporte Enterprise y documentación de élite.</p>
+                        <a href="detalles/relaciones.html" class="btn-info">+ Info</a>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <!-- Bloque: Segmentos de Clientes -->
-        <div class="card" onclick="flipCard(this)">
-            <div class="card-inner">
-                <div class="card-front color-segments"><h3>Segmentos</h3></div>
-                <div class="card-back">
-                    <p>Desarrolladores Frontend, Startups y Empresas Fortune 500.</p>
-                    <a href="detalles/segments.html" class="btn-info">+ Info</a>
+            <!-- Segmentos de Clientes -->
+            <div class="card" onclick="flipCard(this)">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <div class="icon">👥</div>
+                        <h3>Segmentos</h3>
+                    </div>
+                    <div class="card-back">
+                        <p>Desarrolladores Frontend, Startups de rápido crecimiento y Fortune 500.</p>
+                        <a href="detalles/segmentos.html" class="btn-info">+ Info</a>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <!-- Bloque: Recursos Clave -->
-        <div class="card" onclick="flipCard(this)">
-            <div class="card-inner">
-                <div class="card-front color-resources"><h3>Recursos Clave</h3></div>
-                <div class="card-back">
-                    <p>Framework Next.js, Infraestructura Global, Talento Ingenieril.</p>
-                    <a href="detalles/resources.html" class="btn-info">+ Info</a>
+            <!-- Recursos Clave -->
+            <div class="card" onclick="flipCard(this)">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <div class="icon">🛠️</div>
+                        <h3>Recursos Clave</h3>
+                    </div>
+                    <div class="card-back">
+                        <p>Framework Next.js, Infraestructura Global (Edge) y Talento de Clase Mundial.</p>
+                        <a href="detalles/recursos.html" class="btn-info">+ Info</a>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <!-- Bloque: Canales -->
-        <div class="card" onclick="flipCard(this)">
-            <div class="card-inner">
-                <div class="card-front color-channels"><h3>Canales</h3></div>
-                <div class="card-back">
-                    <p>Marketplace de GitHub, Redes Sociales, Conferencias (Next.js Conf).</p>
-                    <a href="detalles/channels.html" class="btn-info">+ Info</a>
+            <!-- Canales -->
+            <div class="card" onclick="flipCard(this)">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <div class="icon">📡</div>
+                        <h3>Canales</h3>
+                    </div>
+                    <div class="card-back">
+                        <p>GitHub Marketplace, Next.js Conf y redes sociales (Twitter/X).</p>
+                        <a href="detalles/canales.html" class="btn-info">+ Info</a>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <!-- Bloque: Estructura de Costes -->
-        <div class="card cost-revenue" onclick="flipCard(this)">
-            <div class="card-inner">
-                <div class="card-front color-costs"><h3>Estructura de Costes</h3></div>
-                <div class="card-back">
-                    <p>Servidores (AWS), I+D en IA y Salarios de Ingeniería.</p>
-                    <a href="detalles/costs.html" class="btn-info">+ Info</a>
+            <!-- Estructura de Costos -->
+            <div class="card footer-card" onclick="flipCard(this)">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <div class="icon">💰</div>
+                        <h3>Estructura de Costos</h3>
+                    </div>
+                    <div class="card-back">
+                        <p>Servidores AWS, I+D (v0, Turbopack) y gastos de marketing/ventas.</p>
+                        <a href="detalles/costos.html" class="btn-info">+ Info</a>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <!-- Bloque: Fuentes de Ingresos -->
-        <div class="card cost-revenue" onclick="flipCard(this)">
-            <div class="card-inner">
-                <div class="card-front color-revenue"><h3>Ingresos</h3></div>
-                <div class="card-back">
-                    <p>Suscripciones Pro/Enterprise, Consumo de Ancho de Banda y v0 AI.</p>
-                    <a href="detalles/revenue.html" class="btn-info">+ Info</a>
+            <!-- Flujos de Ingresos -->
+            <div class="card footer-card" onclick="flipCard(this)">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <div class="icon">📈</div>
+                        <h3>Fuentes de Ingresos</h3>
+                    </div>
+                    <div class="card-back">
+                        <p>Suscripciones Pro/Enterprise, consumo de ancho de banda y servicios IA.</p>
+                        <a href="detalles/ingresos.html" class="btn-info">+ Info</a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </main>
+        </section>
+
+        <!-- FOOTER: CONCLUSIONES -->
+        <footer class="conclusions-section">
+            <h2>Conclusiones Estratégicas</h2>
+            <p>Vercel ha logrado crear un "foso defensivo" (moat) basado en la experiencia del desarrollador y la integración vertical con el framework más popular del mundo.</p>
+            <a href="detalles/conclusiones.html" class="btn-secondary">Ver Análisis Final</a>
+        </footer>
+    </div>
 
     <script src="script.js"></script>
 </body>
