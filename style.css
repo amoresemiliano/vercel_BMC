@@ -119,3 +119,93 @@ h1 { font-size: 2.5rem; font-weight: 800; margin: 0; }
 .btn-secondary { background: var(--white); border: 1px solid var(--black); color: var(--black); }
 .btn-info { background: var(--white); color: var(--black); margin-top: 10px; padding: 5px 10px; font-size: 0.7rem; }
 .btn-primary:hover { opacity: 0.8; }
+
+/* --- ESTILOS PARA PÁGINAS DE DETALLES --- */
+.detail-body {
+    background-color: var(--white);
+    min-height: 100vh;
+}
+
+.detail-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 60px 24px;
+}
+
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--accent);
+    font-weight: 600;
+    margin-bottom: 40px;
+    transition: transform 0.2s;
+}
+
+.back-link:hover {
+    transform: translateX(-5px);
+}
+
+.detail-header {
+    margin-bottom: 40px;
+}
+
+.detail-badge {
+    display: inline-block;
+    background: var(--black);
+    color: var(--white);
+    padding: 4px 12px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+
+.detail-title {
+    font-size: clamp(2.5rem, 8vw, 3.5rem);
+    letter-spacing: -2px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.detail-subtitle {
+    font-size: 1.25rem;
+    color: var(--gray-500);
+    line-height: 1.6;
+}
+
+.detail-content {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #333;
+}
+
+.detail-content h2 {
+    margin: 40px 0 20px;
+    font-size: 1.75rem;
+    letter-spacing: -1px;
+}
+
+.detail-img {
+    width: 100%;
+    border-radius: 12px;
+    margin: 30px 0;
+    border: 1px solid var(--gray-200);
+}
+
+.highlight-card {
+    background: var(--gray-100);
+    border: 1px solid var(--gray-200);
+    padding: 30px;
+    border-radius: 12px;
+    margin: 30px 0;
+}
+
+.black-card {
+    background: var(--black);
+    color: var(--white);
+    padding: 30px;
+    border-radius: 12px;
+    margin: 30px 0;
+}
